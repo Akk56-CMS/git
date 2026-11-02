@@ -1,24 +1,74 @@
-# OS
+# ===== 系统生成 =====
 .DS_Store
 Thumbs.db
 desktop.ini
+$RECYCLE.BIN/
 
-# Editor
+# ===== 编辑器 / IDE =====
 .vscode/
 .idea/
 *.swp
+*.swo
 
-# Dependencies
+# ===== 依赖包 =====
 node_modules/
+bower_components/
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+env/
+*.egg-info/
+.eggs/
+vendor/
+Pods/
 
-# Env / secrets
-.env
-.env.local
+# ===== 构建产物 =====
+dist/
+build/
+out/
+target/
+bin/
+obj/
+.next/
+.nuxt/
+.cache/
+*.class
+*.o
+*.so
+*.dll
+
+# ===== 测试 / 类型检查缓存 =====
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+.coverage
+htmlcov/
+
+# ===== 日志 / 临时文件 =====
 *.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
 
-# Tooling
+# ===== 敏感信息（不要上传） =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+id_rsa*
+secrets.json
+credentials.json
+
+# ===== 工具本地数据 =====
 .workbuddy/
+
+# ===== 其他 =====
+*.local
+.DS_Store?
